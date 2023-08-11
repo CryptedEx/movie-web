@@ -6,7 +6,7 @@ import { SENTRY_DSN } from "@/setup/constants";
 
 Sentry.init({
   dsn: SENTRY_DSN,
-  release: `cryptex-flix@${conf().APP_VERSION}`,
+  release: `movie-web@${conf().APP_VERSION}`,
   sampleRate: 0.5,
   integrations: [
     new Sentry.BrowserTracing(),
